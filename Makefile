@@ -5,7 +5,7 @@
 ## Login   <julian.ladjani@epitech.net>
 ##
 ## Started on  Mon Nov  7 16:31:28 2016 julian ladjani
-## Last update Apr Dec 7 21:58:27 2016 Julian Ladjani
+## Last update May Dec 8 10:03:33 2016 Julian Ladjani
 ##
 
 CC 		=	gcc
@@ -19,7 +19,7 @@ OBJ		=	$(SRC:.c=.o)
 
 RM		=	rm -f
 
-CFLAGS		=	-I./include/ #-Werror
+CFLAGS		=	-I./include/ -Werror
 
 #LIBDIR		=	./lib/
 
