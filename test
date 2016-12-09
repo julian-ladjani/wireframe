@@ -1,0 +1,3 @@
+make re -silent
+./wireframe test.wf
+make clean -silent

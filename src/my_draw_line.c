@@ -5,7 +5,7 @@
 ** Login  <julian.ladjani@epitech.eu>
 **
 ** Started on  Mar Dec 6 18:07:55 2016 Julian Ladjani
-** Last update May Dec 8 10:04:35 2016 Julian Ladjani
+** Last update May Dec 8 13:41:59 2016 Julian Ladjani
 */
 
 #include "my.h"
@@ -18,7 +18,7 @@ void		my_draw_line_case_1(t_my_framebuffer *buffer, sfVector2i from,
   double 	a;
   double	 b;
 
-  a = (double) (to.y - from.y)/ (double)(to.x-from.x);
+  a = (double) (to.y - from.y)/ (double)(to.x - from.x);
   b = from.y - a * from.x;
   x = from.x;
   while (x <= to.x)

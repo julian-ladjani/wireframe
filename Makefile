@@ -5,15 +5,20 @@
 ## Login   <julian.ladjani@epitech.net>
 ##
 ## Started on  Mon Nov  7 16:31:28 2016 julian ladjani
-## Last update May Dec 8 10:03:33 2016 Julian Ladjani
+## Last update Jun Dec 9 14:27:29 2016 Julian Ladjani
 ##
 
-CC 		=	gcc
+CC 		=	gcc -g
 
 SRC		=	src/my_draw_line.c				\
 			src/my_put_pixel.c				\
 			src/window/windows.c				\
 			src/my_parallel_projection.c			\
+			src/parseur/parseur.c				\
+			src/parseur/parseur2.c				\
+			src/wireframe.c					\
+			src/wireframe_foncs.c				\
+			src/calc/calc.c					\
 
 OBJ		=	$(SRC:.c=.o)
 
@@ -21,14 +26,14 @@ RM		=	rm -f
 
 CFLAGS		=	-I./include/ -Werror
 
-#LIBDIR		=	./lib/
+LIBDIR		=	./lib/
 
 NAME 		=	wireframe
 
 all:			$(NAME)
 
 $(NAME):		$(OBJ)
-			$(CC) -o $(NAME) $(OBJ) -lc_graph_prog -lm
+			$(CC) -o $(NAME) $(OBJ) -lc_graph_prog -lm -L$(LIBDIR) -lmy
 
 clean:
 			$(RM) $(OBJ)
