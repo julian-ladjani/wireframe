@@ -5,7 +5,7 @@
 ** Login  <julian.ladjani@epitech.eu>
 **
 ** Started on  May Dec 8 09:04:16 2016 Julian Ladjani
-** Last update Jan Dec 11 18:33:05 2016 Julian Ladjani
+** Last update Jan Dec 11 22:05:42 2016 Julian Ladjani
 */
 
 #include "my.h"
@@ -97,7 +97,8 @@ t_int_tab	parse_my_int(char *buff)
   if ((it_tab = malloc((tab_number(buff) + 1) * sizeof(int *))) == NULL ||
       check_char_number_line(buff) < 1)
     return (tab);
-  tab.xlenght = char_number_line(buff);
+  if ((tab.xlenght = char_number_line(buff)) < 2 || tab.xlenght > 500)
+    return (tab);
   while (*buff != '\0')
     {
       it_tab[i] = malloc(sizeof(int) * char_number_line(buff));
@@ -106,7 +107,8 @@ t_int_tab	parse_my_int(char *buff)
       buff += char_number(buff) + 1;
       i++;
     }
-  tab.ylenght = i;
+  if ((tab.ylenght = i) < 2 || tab.ylenght > 500)
+    return (tab);
   tab.tab = it_tab;
   return (tab);
 }

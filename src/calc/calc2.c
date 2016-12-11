@@ -5,7 +5,7 @@
 ** Login  <julian.ladjani@epitech.eu>
 **
 ** Started on  Jul Dec 10 18:55:30 2016 Julian Ladjani
-** Last update Jan Dec 11 20:13:41 2016 Julian Ladjani
+** Last update Jan Dec 11 22:17:05 2016 Julian Ladjani
 */
 
 #include "my.h"
@@ -104,5 +104,6 @@ t_int_tab	action_bonus(t_int_tab tab, sfEvent event)
     tab.linelenght -= 1;
   else
     tab = action_affbonus(tab, event);
+  tab = check_bonus(tab);
   return (tab);
 }

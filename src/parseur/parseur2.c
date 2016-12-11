@@ -5,7 +5,7 @@
 ** Login  <julian.ladjani@epitech.eu>
 **
 ** Started on  May Dec 8 14:41:15 2016 Julian Ladjani
-** Last update Jan Dec 11 19:43:27 2016 Julian Ladjani
+** Last update Jan Dec 11 21:46:54 2016 Julian Ladjani
 */
 
 #include "my.h"
@@ -60,6 +60,8 @@ int		*set_in_intab(char *buff, int *tab)
 	  if ((*(buff + 1) < '0' || *(buff + 1) > '9') && *buff == '-')
 	    return (NULL);
 	  tab[j] = my_getnbrprintf(buff);
+	  if (tab[j] > 1000 || tab[j] < -1000)
+	    return (NULL);
 	  j++;
 	  buff += char_number_dot(buff) + 1;
 	}
