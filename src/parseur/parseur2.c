@@ -5,7 +5,7 @@
 ** Login  <julian.ladjani@epitech.eu>
 **
 ** Started on  May Dec 8 14:41:15 2016 Julian Ladjani
-** Last update Jun Dec 9 23:42:37 2016 Julian Ladjani
+** Last update Jan Dec 11 19:43:27 2016 Julian Ladjani
 */
 
 #include "my.h"
@@ -84,7 +84,6 @@ int		check_buffer(char *buff)
   int		i;
 
   i = 0;
-
   while (buff[i] != '\0')
     {
       if ((buff[i] < '0' || buff[i] > '9') && (buff[i] != '-' &&

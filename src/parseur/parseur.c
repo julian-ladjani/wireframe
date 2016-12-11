@@ -5,7 +5,7 @@
 ** Login  <julian.ladjani@epitech.eu>
 **
 ** Started on  May Dec 8 09:04:16 2016 Julian Ladjani
-** Last update Jun Dec 9 23:54:05 2016 Julian Ladjani
+** Last update Jan Dec 11 18:33:05 2016 Julian Ladjani
 */
 
 #include "my.h"
@@ -57,6 +57,7 @@ int		char_number_dot(char *buff)
     i--;
   return (i);
 }
+
 t_int_tab	read_it(char *path)
 {
   char		*buff;

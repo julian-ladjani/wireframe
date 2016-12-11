@@ -5,7 +5,7 @@
 ** Login  <julian.ladjani@epitech.eu>
 **
 ** Started on  May Dec 8 17:35:32 2016 Julian Ladjani
-** Last update Jul Dec 10 00:18:42 2016 Julian Ladjani
+** Last update Jan Dec 11 17:21:03 2016 Julian Ladjani
 */
 
 #include "my.h"
@@ -48,8 +48,6 @@ int		main(int ac, char **av, char **ae)
       return (84);
     }
   windows(tab);
-  while (++i < (tab.ylenght))
-    free(tab.tab[i]);
   free(tab.buffer);
   free(tab.tab);
   return (0);
@@ -66,7 +64,7 @@ int			windows(t_int_tab tab)
   mode.width = SCREEN_WIDTH;
   mode.height = SCREEN_HEIGHT;
   mode.bitsPerPixel = 32;
-  window = sfRenderWindow_create(mode, "SFML window", sfClose, NULL);
+  window = sfRenderWindow_create(mode, "wireframe", sfClose, NULL);
   if (window == NULL)
     return (1);
   buffer = my_framebuffer_create(mode.width, mode.height);
@@ -75,8 +73,7 @@ int			windows(t_int_tab tab)
   tab.buffer = buffer;
   tab = calc_line_lenght(tab);
   draw_wireframe(tab);
-  //my_draw_line(buffer, from, to2, sfRed);
   set_sprite(buffer, sprite, texture);
-  my_window(window, sprite, tab);
+  my_window(window, sprite, tab, texture);
   return (0);
 }

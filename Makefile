@@ -5,7 +5,7 @@
 ## Login   <julian.ladjani@epitech.net>
 ##
 ## Started on  Mon Nov  7 16:31:28 2016 julian ladjani
-## Last update Jun Dec 9 14:27:29 2016 Julian Ladjani
+## Last update Jul Dec 10 18:59:47 2016 Julian Ladjani
 ##
 
 CC 		=	gcc -g
@@ -19,6 +19,7 @@ SRC		=	src/my_draw_line.c				\
 			src/wireframe.c					\
 			src/wireframe_foncs.c				\
 			src/calc/calc.c					\
+			src/calc/calc2.c				\
 
 OBJ		=	$(SRC:.c=.o)
 
