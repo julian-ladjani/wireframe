@@ -5,7 +5,7 @@
 ** Login  <julian.ladjani@epitech.eu>
 **
 ** Started on  May Dec 8 09:04:16 2016 Julian Ladjani
-** Last update Jan Dec 11 22:05:42 2016 Julian Ladjani
+** Last update Feb Dec 12 01:55:05 2016 Julian Ladjani
 */
 
 #include "my.h"
@@ -62,7 +62,6 @@ t_int_tab	read_it(char *path)
 {
   char		*buff;
   int		offset;
-  int		i;
   int		len;
   int		fd;
   t_int_tab	tab;

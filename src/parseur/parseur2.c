@@ -5,7 +5,7 @@
 ** Login  <julian.ladjani@epitech.eu>
 **
 ** Started on  May Dec 8 14:41:15 2016 Julian Ladjani
-** Last update Jan Dec 11 21:46:54 2016 Julian Ladjani
+** Last update Feb Dec 12 01:55:49 2016 Julian Ladjani
 */
 
 #include "my.h"
@@ -13,10 +13,8 @@
 int		my_strcmp(char *s1, char *s2, int n)
 {
   int		c;
-  int		c2;
 
   c = 0;
-  c2 = 0;
   while (s1[c] != '\0' && s2[c] != '\0' && c < n)
     {
       if (s1[c] != s2[c])

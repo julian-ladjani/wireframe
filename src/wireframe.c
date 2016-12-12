@@ -5,7 +5,7 @@
 ** Login  <julian.ladjani@epitech.eu>
 **
 ** Started on  May Dec 8 17:35:32 2016 Julian Ladjani
-** Last update Jan Dec 11 17:21:03 2016 Julian Ladjani
+** Last update Feb Dec 12 01:56:47 2016 Julian Ladjani
 */
 
 #include "my.h"
@@ -13,7 +13,6 @@
 int		check_env(char **env)
 {
   int		i;
-  int		j;
 
   i = 0;
   while (env[i] != NULL)
@@ -28,9 +27,7 @@ int		check_env(char **env)
 int		main(int ac, char **av, char **ae)
 {
   t_int_tab	tab;
-  int		i;
 
-  i = 0;
   if (ac < 2)
     {
       my_printf("%s\n", "Invalid option : wireframe \"file.wf\"");
