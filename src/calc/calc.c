@@ -5,7 +5,7 @@
 ** Login  <julian.ladjani@epitech.eu>
 **
 ** Started on  Jun Dec 9 14:16:17 2016 Julian Ladjani
-** Last update Jan Dec 11 18:54:04 2016 Julian Ladjani
+** Last update Feb Dec 12 01:27:18 2016 Julian Ladjani
 */
 
 #include "my.h"
@@ -13,9 +13,9 @@
 t_int_tab	calc_line_lenght(t_int_tab tab)
 {
   if (tab.xlenght > tab.ylenght)
-    tab.linelenght = 500 / tab.xlenght;
+    tab.linelenght = 700 / tab.xlenght;
   else
-    tab.linelenght = 500 / tab.ylenght;
+    tab.linelenght = 700 / tab.ylenght;
   tab.xpos = 0;
   tab.ypos = 0;
   tab.xtrans = 0;
@@ -28,6 +28,8 @@ t_int_tab	calc_line_lenght(t_int_tab tab)
   tab.affline = 1;
   tab.affzero = 1;
   tab.zoom = 0;
+  tab.proj = 0;
+  tab.incre = 1;
   tab.linelenghtbase = tab.linelenght;
   return (tab);
 }

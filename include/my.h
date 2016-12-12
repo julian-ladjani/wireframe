@@ -5,7 +5,7 @@
 ** Login  <julian.ladjani@epitech.eu>
 **
 ** Started on  Mar Dec 6 17:39:54 2016 Julian Ladjani
-** Last update Jan Dec 11 22:32:07 2016 Julian Ladjani
+** Last update Feb Dec 12 01:23:23 2016 Julian Ladjani
 */
 
 #ifndef MY_H_
@@ -58,6 +58,8 @@ typedef struct			s_int_tab
   	int			affgrid;
   	int			affline;
   	int			aff3dgrid;
+  	int			proj;
+  	int			incre;
   	t_my_framebuffer	*buffer;
  	sfColor			color;
 }				t_int_tab;
@@ -96,6 +98,8 @@ char				*my_realloc(char *str, int lenght);
 
 sfVector2i			my_parallel_projection(sfVector3f pos3d, float angle);
 sfVector2i			center_wf(sfVector3f vec, t_int_tab tab);
+sfVector2i 			my_isometric_projection(sfVector3f pos3d);
+sfVector2i 			my_julian_projection(sfVector3f pos3d);
 
 t_int_tab			calc_line_lenght(t_int_tab tab);
 t_int_tab			parse_my_int(char *buff);

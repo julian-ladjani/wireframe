@@ -5,7 +5,7 @@
 ## Login   <julian.ladjani@epitech.net>
 ##
 ## Started on  Mon Nov  7 16:31:28 2016 julian ladjani
-## Last update Jan Dec 11 22:17:52 2016 Julian Ladjani
+## Last update Feb Dec 12 01:15:09 2016 Julian Ladjani
 ##
 
 CC 		=	gcc -g
@@ -21,6 +21,8 @@ SRC		=	src/my_draw_line.c				\
 			src/calc/calc.c					\
 			src/calc/calc2.c				\
  			src/calc/check_bonus.c				\
+			src/my_isometric_projection.c			\
+			src/my_projection.c				\
 
 OBJ		=	$(SRC:.c=.o)
 
