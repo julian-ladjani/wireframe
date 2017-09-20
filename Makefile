@@ -5,7 +5,7 @@
 ## Login   <julian.ladjani@epitech.net>
 ##
 ## Started on  Mon Nov  7 16:31:28 2016 julian ladjani
-## Last update Mon Dec 12 01:58:12 2016 julian ladjani
+## Last update Mon May 22 16:11:40 2017 Ladjani Julian
 ##
 
 CC 		=	gcc -g
@@ -37,7 +37,7 @@ NAME 		=	wireframe
 all:			$(NAME)
 
 $(NAME):		$(OBJ)
-			$(CC) -o $(NAME) $(OBJ) -lc_graph_prog -lm -L$(LIBDIR) -lmy
+			$(CC) -o $(NAME) $(OBJ) -lcsfml-graphics -lm -L$(LIBDIR) -lmy
 
 clean:
 			$(RM) $(OBJ)
